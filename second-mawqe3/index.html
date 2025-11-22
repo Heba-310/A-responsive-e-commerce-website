@@ -1,0 +1,1894 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce_website</title>
+  <link rel="icon" type="image/png" href="white_logo.png">
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-KY4Uq8w0k+PZQ6QzHR6WPR7bEclvmQ+IoFX+G8lExQ1x1eF3vClYQ7sH9kZ5tM3D5zQnJQ/yOV6v6aYV7C2U2g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+
+
+
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+
+    .header {
+      width: 100vw;
+      height: 10vh;
+      background-color: white;
+    }
+
+    .header i {
+      font-size: 20px;
+    }
+
+    .header img {
+      width: 200px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .header .ii {
+      border: 2px solid #ff8716;
+      background-color: #ff8716;
+      width: 60px;
+      height: 55px;
+      display: inline-block;
+      text-align: center;
+      line-height: 55px;
+      color: #fff;
+
+
+    }
+
+    .header input {
+      width: 400px;
+      height: 55px;
+      margin-left: -4px;
+      border: none;
+      text-align: center;
+
+      border: none;
+      background-color: rgb(243, 241, 241);
+    }
+
+    .header select {
+      width: 155px;
+      height: 55px;
+      border: none;
+      background-color: rgb(243, 241, 241);
+      text-align: center;
+
+    }
+
+    .header span {
+      margin-top: 10px;
+      display: inline-block;
+      min-width: 18px;
+      min-height: 18px;
+      width: auto;
+      height: auto;
+      border-radius: 50%;
+      background-color: #ff8716;
+      text-align: center;
+      font-size: 10px;
+      padding: 3px;
+      color: #fff;
+      margin-left: -18px;
+      font-weight: bolder;
+    }
+
+    .header input,
+    .header select:active {
+      border: none;
+      outline: none;
+    }
+
+    .bottom_header {
+      margin-top: 100px;
+
+    }
+
+    .dropdown {
+      background-color: #ff8716;
+      height: 50px;
+      text-align: center;
+
+
+    }
+
+    .bottom {
+      border-block: 1px solid rgb(223, 221, 221);
+
+    }
+
+    .bottomy {
+      background-color: #ff8716;
+      width: 130px;
+      height: 45px;
+
+      color: #fff;
+      text-align: center;
+      line-height: 45px;
+      font-weight: 500;
+      transition: transform 0.2s ease;
+    }
+
+    .bottomy1 {
+      background-color: #ff8716;
+      width: 70px;
+      height: 45px;
+      color: #fff;
+      text-align: center;
+      line-height: 45px;
+      font-weight: 500;
+      transform: translateX(110px);
+      transform-origin: center;
+
+      will-change: transform;
+
+    }
+
+    .bottom_header .navi-tem li a:hover {
+      color: #ff8716;
+    }
+
+    .sora {
+      height: 61vh;
+      width: 20.5vw;
+    }
+
+    #saly {
+      color: #ff8716;
+      font-weight: bold;
+      font-size: 45px;
+      padding-left: 5px;
+    }
+
+    #fo {
+
+      color: gray;
+      margin-top: 10px;
+      font-weight: 60px;
+    }
+
+    .back {
+      background-color: rgb(247, 245, 245);
+      border: none;
+    }
+
+    .h hr {
+
+      background-color: #ff8716;
+      opacity: 1 !important;
+      border: 2px solid #ff8716;
+
+    }
+
+    .card #mashy {
+      color: #ff8716;
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    .stars {
+      color: #ff8716;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      display: inline-block;
+    }
+
+    .add-to-cart {
+      background-color: #ff8716;
+      height: 40px;
+      width: 17vh;
+      color: white;
+      text-align: center;
+      line-height: 40px;
+      transition: transform 0. ease;
+      margin-left: -12px;
+    }
+
+
+
+
+    .add-to-cart:hover {
+      background-color: #f07807;
+      transform: scale(1.1);
+    }
+
+    .photo {
+      width: 60%;
+      height: 300px;
+      margin-left: 55px;
+      margin-top: 20px;
+      object-fit: contain;
+
+    }
+
+    .cardy .card {
+      height: 450px;
+    }
+
+    .ya33 {
+
+      height: auto;
+      width: 100%;
+
+    }
+
+    .edit img {
+      width: 100%;
+
+    }
+
+    .footer {
+      width: 100%;
+
+
+    }
+
+    .footer img {
+      width: 160px;
+      height: auto;
+    }
+
+    .footer p {
+      color: rgb(211, 208, 208);
+    }
+
+    .footer li::before {
+      content: "\f0da";
+
+      font-family: "Font Awesome 6 Free";
+      /* لازم عشان الأيقونة تظهر */
+      content: "\f0da";
+      /* ده الكود بتاع السهم اللي لليمين */
+      font-weight: 900;
+      /* النوع solid */
+      margin-right: 8px;
+      /* مسافة صغيرة بين السهم والكلمة */
+      color: #ff8716;
+
+    }
+
+    .footer ul {
+      list-style: none;
+    }
+
+    .footer li,
+    .footer h2 {
+      color: rgb(211, 208, 208);
+    }
+
+    .footer li {
+      margin-top: 5px;
+    }
+
+    .footer h2 {
+      padding-bottom: 15px;
+      margin-left: 2rem;
+    }
+
+    .footer .muram3 {
+      border: none;
+      outline: none;
+      background-color: orange;
+      color: white;
+      width: 3rem;
+      height: 3rem;
+      text-align: center;
+      border-radius: 3px;
+      display: inline-block;
+      margin-right: 5px;
+
+    }
+
+    .end {
+      width: 100%;
+      background-color: #121416;
+      min-height: 10vh;
+      line-height: 10vh;
+    }
+
+    .footer,
+    .end {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+
+    .footer li:hover {
+      color: #f07807;
+      transform: translateX(10px);
+      transition: transform 0.3s ease;
+    }
+
+    .card .khat:hover {
+      color: #f07807;
+      text-decoration: underline;
+    }
+
+    #fonty {
+      color: #f07807;
+    }
+
+    #ff {
+      color: #fff;
+    }
+
+    .harak:hover {
+      color: #f07807 !important;
+      transform: translateY(-3px);
+
+    }
+
+    .harak {
+
+      transition: transform 0.2s ease;
+    }
+
+    .bottomy,
+    .bottomy1:hover {
+
+      cursor: pointer;
+    }
+
+    .card img:hover {
+      transform: scale(1.2);
+    }
+
+    .card img {
+      transition: transform 0.2s ease;
+    }
+
+    .carusel img {
+      cursor: pointer;
+    }
+
+    select:focus {
+      outline: none;
+      border: none;
+
+    }
+
+    .ico {
+      font-size: 2vw !important;
+    }
+
+    .bottomy:hover {
+      background-color: #f07807;
+
+    }
+
+    .bottomy1:hover {
+      background-color: #f07807;
+    }
+
+    .offcanvas-backdrop.show {
+      background-color: rgba(57, 54, 54, 0.5) !important;
+    }
+
+    .carty {
+      color: #f07807;
+    }
+
+    .btn88 {
+      background-color: #ff8716;
+      color: #fff;
+      outline: none;
+      border: none;
+      border: 1px solid #ff8716;
+
+      text-align: center;
+      height: 40px;
+      line-height: 30px;
+
+
+    }
+
+    .btn88 p {
+      font-weight: bold;
+    }
+
+    .offcanvas-title {
+
+      font-weight: bold;
+    }
+
+
+
+    @media(max-width:1024px) {
+      .header .col-lg-7 {
+        margin-top: 5%;
+        width: 60vw;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+      }
+    }
+
+    @media(max-width:1024px) {
+      .header .col-lg-7 {
+        margin-top: 5%;
+        width: 60vw;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+      }
+    }
+
+    @media(max-width:1440px) {
+      .carusel .d-block {
+        height: 600px;
+
+      }
+
+      .carusel .carousel-item {
+        min-height: 400px;
+
+
+      }
+
+      .carusel .sory {
+
+        height: 300px;
+      }
+    }
+
+    @media(min-width:1024px) {
+      .header .fook {
+        margin-top: 20px;
+      }
+
+      .header img {
+        margin-top: 7px;
+
+      }
+
+    }
+
+    @media(min-width:768px) {
+
+      .end1 {
+        margin-left: -258px;
+
+      }
+    }
+
+
+    @media(width:768px) {
+      .header .fook {
+        margin-top: 10px;
+        transform: translateX(10px);
+
+      }
+
+      .end1 {
+        margin-left: -50px;
+
+      }
+
+      .ya33 {
+        margin-bottom: 10px;
+      }
+
+
+      .bottomy1 {
+
+        transform: translateX(70px);
+
+      }
+
+      .end img {
+        transform: translateX(-30px);
+      }
+
+      .ico {
+        font-size: 3vw !important;
+        transform: translateY(-30px);
+
+      }
+
+      .carusel .d-block {
+        height: 400px;
+
+      }
+
+      .bottomy {
+
+        margin-right: 11px;
+      }
+
+      .ico {
+        transform: translateX(10px);
+
+      }
+
+      .header img {
+
+        transform: scale(0.8) translateX(-10px);
+
+      }
+      .sora{
+        transform: translateY(10px);
+      }
+
+    }
+
+    @media(width:1024px) {
+      .header .fook {
+        margin-top: 10px;
+        transform: translateX(-55px);
+
+      }
+
+      .bottomy1 {
+        margin-left: -80px;
+
+      }
+
+      .end img {
+        transform: translateX(-30px);
+      }
+
+      .bottomy {
+
+        width: 120px;
+        margin-right: 13px;
+        transform: translateX(10px);
+      }
+
+      .end1 {
+        margin-left: -150px;
+
+      }
+
+      .ico {
+        margin-top: -10px;
+
+      }
+
+      .header i {
+        margin-top: -20px;
+
+      }
+
+      .cardy .product {
+        width: 35px;
+        margin-right: 10px;
+      }
+
+      .carusel .d-block {
+        height: 520px;
+
+      }
+
+      .carusel .carousel-item {
+        min-height: 300px;
+
+
+
+      }
+
+      .carusel .carousel-item .sory img {
+
+        height: 250px;
+        width: 15vw;
+        transform: translateX(-60px);
+      }
+
+      .muram3 {
+        margin-top: 10px;
+      }
+
+      .card.product {
+        max-width: 400px;
+        box-sizing: border-box;
+
+
+      }
+
+    }
+
+    @media(max-width:576px) {
+      .header {
+        display: flex;
+        justify-content: space-between;
+
+      }
+
+      .banner {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-left: 1px;
+
+      }
+      .endy{
+        margin-top: -50px;
+      }
+
+      .h hr {
+        margin-bottom: 50px;
+      }
+
+      .cardy {
+        margin-bottom: 20px;
+      }
+
+      .back {
+        min-height: 350px;
+
+      }
+
+      .carusel .d-block {
+        height: auto;
+        margin-bottom: -20px;
+
+      }
+
+      .carusel .carousel-item {
+        min-height: 200px;
+      }
+
+      .row {
+        margin-bottom: -40px;
+
+      }
+
+      .sora {
+        transform: translateY(-10px);
+        width: 30vw;
+      }
+
+      .header img {
+        width: 30%;
+        margin-bottom: 5px;
+      }
+
+      .ya33 {
+        margin-bottom: 10px;
+      }
+
+      .ss {
+        margin-top: -20px;
+      }
+
+      .header .fook {
+        width: 40%;
+        padding-top: 0;
+        margin-top: 0;
+        order: 2;
+
+        transform: translate(30px, -50px);
+
+
+      }
+
+      .collapse {
+
+        transform: translate(0px, 60px);
+      }
+
+      .header .editu {
+        transform: translate(75px, -30px);
+
+        order: 1;
+      }
+
+
+      .header .ali {
+
+        order: 1;
+
+
+
+
+      }
+
+      .ico {
+
+        font-size: 6vw !important;
+
+      }
+
+      .bottomy1,
+      .bottomy {
+
+        transform: translate(0px, -40px);
+      }
+
+      .bottomy1 {
+        margin-left: 190px;
+      }
+
+      .header .ii {
+        width: 90px;
+      }
+    }
+
+    @media (max-width: 400px) {
+
+      .header .fook {
+
+
+        margin: 0;
+        padding: 0;
+      }
+
+      .sora {
+        transform: translateY(-35px);
+        margin-bottom: -20px;
+      }
+
+
+
+
+
+      .collapse {
+
+        transform: translatex(40px);
+      }
+
+      .bottomy {
+        width: 92px;
+
+        transform: translate(10px, -40px);
+
+      }
+
+      .row {
+        margin-bottom: -45px;
+      }
+
+
+      .bottomy1 {
+
+        width: 69px;
+
+      }
+
+
+    }
+
+    @media (max-width: 340px) {
+      .bottomy1 {
+        font-size: medium;
+        transform: translate(-48px, -40px);
+      }
+
+      .py-5 {
+        padding-top: 5rem !important;
+        padding-bottom: 6rem !important;
+      }
+
+
+      .bottomy {
+        width: 90px;
+        transform: translate(10px, -85px);
+      }
+
+      .banner {
+        margin-top: 20px;
+      }
+
+      .cardy {
+        margin-bottom: 20px;
+      }
+
+      .py-5 {
+        padding-top: 0px;
+      }
+
+      .row {
+        margin-bottom: -90px;
+      }
+
+      .sora {
+        transform: translateY(-70px);
+      }
+
+      .header .fook {
+        margin: 0;
+        padding: 0;
+        width: 13vw;
+        transform: translate(10px, -50px);
+        margin-inline: 5px;
+      }
+
+      .header input {
+        width: 155px;
+      }
+
+      .header .editu {
+
+
+        margin-left: -15px;
+
+      }
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="header fixed-top py-2">
+    <div class="container text-align-center">
+      <div class="row">
+        <div class="col-lg-4 col-md-3 col-sm-3 col-7">
+          <a class="navbar-brand" href="#"><img src="logo.png"></a>
+        </div>
+        <div class=" fook col-lg-6 col-md-7 col-sm-6  d-flex">
+          <label for="mySelect"></label>
+          <select id="mySelect" name="options">
+            <option selected disabled>All Categories</option>
+            <option value="2">two</option>
+
+            <option value="2">three</option>
+          </select>
+          <input type="text" placeholder="search here">
+          <div class="ii"><i class="bi bi-search"></i></div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 col-4 editu col-4 py-4">
+
+          <i class="bi bi-bag-check ico" data-bs-toggle="offcanvas" data-bs-target="#cartSidebar">
+            <span id="badgenumber">0</span>
+          </i>
+          <i class="bi bi-heart-fill ico fa-3x"></i>
+          <span id="badgenumber">0</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="bottom_header ">
+
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container">
+        <div class="row w-100  ">
+
+          <!-- العمود الأول -->
+          <div class="col-lg-9 col-md-7 col-sm-3 align-items-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle ml-3 text-white" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Dropdown link
+                  </a>
+
+                </li>
+
+                <li class="nav-item px-2">
+                  <a class="nav-link harak active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link harak active" href="#">Features</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link  harak active" href="#">Pricing</a>
+
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link  harak active" href="#">Pricing</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link harak active" href="#">Pricing</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- العمود الثاني -->
+          <div class="col-lg-3 col-md-2 col-sm-4 bottomy1  ">
+            Log in
+
+          </div>
+          <div class="col-lg-1 col-md-2 col-sm-4 bottomy ms-auto ">
+            Sign up
+          </div>
+
+        </div>
+      </div>
+    </nav>
+    <section class="carusel py-2">
+      <div class="container">
+        <div class="row w-100">
+          <div class="col-lg-9">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="banner_home1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="banner_home2.png" class="d-block w-100" class="sory" alt="...">
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1">
+            <img src="banner_home3.png" class="sora">
+          </div>
+        </div>
+        <div class="row py-5">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card mb-3 back" style="max-width: 600px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="banner3_3.png" class="img-fluid rounded-start" alt="..." style="margin-top: 20px;">
+                </div>
+                <div class="col-md-8 ">
+                  <div class="card-body">
+                    <h5 class="card-title">Break Disk<br>Deals on this</h5>
+                    <p class="card-text">
+                    <div class="sale d-flex">
+                      <h5 id="fo">Up<br> To</h5>
+                      <span id="saly">70%</span>
+                    </div>
+                    <h6>shop now</h6>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3  col-md-6 col-sm-12">
+            <div class="card mb-3 back" style="max-width: 600px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="banner3_4.png" class="img-fluid rounded-start" alt="..." style="margin-top: 30px;">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Break Disk<br>Deals on this</h5>
+                    <p class="card-text">
+                    <div class="sale d-flex">
+                      <h5 id="fo">Up<br> To</h5>
+                      <span id="saly">70%</span>
+                    </div>
+                    <h6>shop now</h6>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3  col-md-6 col-sm-12">
+            <div class="card mb-3 back" style="max-width: 600px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="banner3_1.png" class="img-fluid rounded-start" alt="..." style="margin-top: 50px;">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Break Disk<br>Deals on this</h5>
+                    <p class="card-text">
+                    <div class="sale d-flex">
+                      <h5 id="fo">Up<br> To</h5>
+                      <span id="saly">70%</span>
+                    </div>
+                    <h6>shop now</h6>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3  col-md-6 col-sm-12">
+            <div class="card mb-3 back" style="max-width: 600px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="banner3_3.png" class="img-fluid rounded-start" alt="..." style="margin-top: 40px;">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Break Disk<br>Deals on this</h5>
+                    <p class="card-text">
+                    <div class="sale d-flex">
+                      <h5 id="fo">Up<br> To</h5>
+                      <span id="saly">70%</span>
+                    </div>
+                    <h6>shop now</h6>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      </div>
+    </section>
+    <section class="cardy">
+      <div class="container">
+        <div class="row g-3 justify-content-center align-items-center">
+
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width:20rem;" data-name="Laptop" data-price="25">
+              <img src="7.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="C:\Users\AIA\Downloads\ecommerce\produc_ecommerce_reda.html" class="py-2">Infinix
+                  Smart (Galaxy White, 4GB RAM, 64GB Storage) </a>
+                <span id="mashy"> &#36;220 </span> <s>&#36;250</s>
+
+                <div class="cl p-3"> <a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> <span
+                      class="addy">add to
+                      cart</span></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width: 20rem;" data-name="Laptop" data-price="25">
+              <img src="17.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="#" class="py-2">Infinix Smart (Galaxy White, 4GB RAM, 64GB Storage)</a>
+                <span id="mashy"> &#36;220</span> <s>&#36;250</s>
+                <div class="cl p-3"><a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> <span
+                      class="addy">add
+                      to cart</span></a>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width: 20rem;" data-name="Laptop" data-price="25">
+              <img src="10.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="#" class="py-2">Infinix Smart (Galaxy White, 4GB RAM, 64GB Storage)</a>
+                <span id="mashy"> &#36;220</span> <s>&#36;250</s>
+                <div class="cl p-3"><a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> add to cart</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width:20rem;" data-name="Laptop" data-price="25">
+              <img src="19.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="#" class="py-2">Infinix Smart (Galaxy White, 4GB RAM, 64GB Storage)</a>
+                <span id="mashy"> &#36;220</span> <s>&#36;250</s>
+                <div class="cl p-3"><a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> <span
+                      class="addy">add to
+                      cart</span></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width:20rem;" data-name="Laptop" data-price="25">
+              <img src="20.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="#" class="py-2">Infinix Smart (Galaxy White, 4GB RAM, 64GB Storage)</a>
+                <span id="mashy"> &#36;220</span> <s>&#36;250</s>
+                <div class="cl p-3"><a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> <span
+                      class="addy">add to
+                      cart</span></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width:20rem;" data-name="Laptop" data-price="25">
+              <img src="23.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="#" class="py-2">Infinix Smart (Galaxy White, 4GB RAM, 64GB Storage)</a>
+                <span id="mashy"> &#36;220</span> <s>&#36;250</s>
+                <div class="cl p-3"><a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> <span
+                      class="addy">add to cart</span></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="row  banner py-5 text-align-end w-100 justify-content-between">
+          <div class="col-lg-6">
+            <img src="banner_box4.jpg" class="ya33">
+          </div>
+          <div class="col-lg-6 text-end">
+            <img src="banner_box5.jpg" class="ya33">
+          </div>
+        </div>
+        <div class="h">
+          <div class="h">
+
+            <div class="row">
+              <div class="col-lg-12">
+                <hr>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </section>
+    <section class="cardy">
+      <div class="container">
+        <div class="row g-3 justify-content-center align-items-center">
+
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width:20rem;" data-name="Laptop" data-price="25">
+              <img src="16.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi b
+                  
+                  i-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="C:\Users\AIA\Downloads\ecommerce\produc_ecommerce_reda.html" class="py-2">Infinix
+                  Smart (Galaxy White, 4GB RAM, 64GB Storage) </a>
+                <span id="mashy"> &#36;220 </span> <s>&#36;250</s>
+
+                <div class="cl p-3"> <a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> <span
+                      class="addy">add to
+                      cart</span></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width: 20rem;" data-name="Laptop" data-price="25">
+              <img src="9.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="#" class="py-2">Infinix Smart (Galaxy White, 4GB RAM, 64GB Storage)</a>
+                <span id="mashy"> &#36;220</span> <s>&#36;250</s>
+                <div class="cl p-3"><a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> <span
+                      class="addy">add
+                      to cart</span></a>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width: 20rem;" data-name="Laptop" data-price="25">
+              <img src="16.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="#" class="py-2">Infinix Smart (Galaxy White, 4GB RAM, 64GB Storage)</a>
+                <span id="mashy"> &#36;220</span> <s>&#36;250</s>
+                <div class="cl p-3"><a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> add to cart</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width:20rem;" data-name="Laptop" data-price="25">
+              <img src="9.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="#" class="py-2">Infinix Smart (Galaxy White, 4GB RAM, 64GB Storage)</a>
+                <span id="mashy"> &#36;220</span> <s>&#36;250</s>
+                <div class="cl p-3"><a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> <span
+                      class="addy">add to
+                      cart</span></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width:20rem;" data-name="Laptop" data-price="25">
+              <img src="16.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="#" class="py-2">Infinix Smart (Galaxy White, 4GB RAM, 64GB Storage)</a>
+                <span id="mashy"> &#36;220</span> <s>&#36;250</s>
+                <div class="cl p-3"><a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> <span
+                      class="addy">add to
+                      cart</span></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width:20rem;" data-name="Laptop" data-price="25">
+              <img src="9.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="#" class="py-2">Infinix Smart (Galaxy White, 4GB RAM, 64GB Storage)</a>
+                <span id="mashy"> &#36;220</span> <s>&#36;250</s>
+                <div class="cl p-3"><a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> <span
+                      class="addy">add to
+                      cart</span></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="row banner py-5 text-align-end w-100 justify-content-between">
+          <div class="col-lg-6">
+            <img src="banner_box1.jpg" class="ya33">
+          </div>
+          <div class="col-lg-6 text-end">
+            <img src="banner_box2.jpg" class="ya33">
+          </div>
+        </div>
+        <div class="h">
+          <div class="h">
+
+            <div class="row">
+              <div class="col-lg-12">
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </section>
+    <section class="cardy">
+      <div class="container">
+        <div class="row g-3 justify-content-center align-items-center">
+
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width:20rem;" data-name="Laptop" data-price="25">
+              <img src="0.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="C:\Users\AIA\Downloads\ecommerce\produc_ecommerce_reda.html" class="py-2">Infinix
+                  Smart (Galaxy White, 4GB RAM, 64GB Storage) </a>
+                <span id="mashy"> &#36;220 </span> <s>&#36;250</s>
+
+                <div class="cl p-3"> <a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> <span
+                      class="addy">add to
+                      cart</span></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width: 20rem;" data-name="Laptop" data-price="25">
+              <img src="2.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="#" class="py-2">Infinix Smart (Galaxy White, 4GB RAM, 64GB Storage)</a>
+                <span id="mashy"> &#36;220</span> <s>&#36;250</s>
+                <div class="cl p-3"><a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> <span
+                      class="addy">add
+                      to cart</span></a>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width: 20rem;" data-name="Laptop" data-price="25">
+              <img src="3.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="#" class="py-2">Infinix Smart (Galaxy White, 4GB RAM, 64GB Storage)</a>
+                <span id="mashy"> &#36;220</span> <s>&#36;250</s>
+                <div class="cl p-3"><a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> add to cart</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width:20rem;" data-name="Laptop" data-price="25">
+              <img src="5.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="#" class="py-2">Infinix Smart (Galaxy White, 4GB RAM, 64GB Storage)</a>
+                <span id="mashy"> &#36;220</span> <s>&#36;250</s>
+                <div class="cl p-3"><a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> <span
+                      class="addy">add to
+                      cart</span></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width:20rem;" data-name="Laptop" data-price="25">
+              <img src="7.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="#" class="py-2">Infinix Smart (Galaxy White, 4GB RAM, 64GB Storage)</a>
+                <span id="mashy"> &#36;220</span> <s>&#36;250</s>
+                <div class="cl p-3"><a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> <span
+                      class="addy">add to
+                      cart</span></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width:20rem;" data-name="Laptop" data-price="25">
+              <img src="0.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="#" class="py-2">Infinix Smart (Galaxy White, 4GB RAM, 64GB Storage)</a>
+                <span id="mashy"> &#36;220</span> <s>&#36;250</s>
+                <div class="cl p-3"><a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> <span
+                      class="addy">add to
+                      cart</span></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="row banner py-5 text-align-end w-100 justify-content-between">
+          <div class="col-lg-6">
+            <img src="banner_box3.jpg" class="ya33">
+          </div>
+          <div class="col-lg-6 text-end">
+            <img src="banner_box2.jpg" class="ya33">
+          </div>
+        </div>
+        <div class="h">
+          <div class="h">
+
+            <div class="row">
+              <div class="col-lg-12">
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </section>
+    <section class="cardy">
+      <div class="container">
+        <div class="row g-3 justify-content-center align-items-center">
+
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width:20rem;" data-name="Laptop" data-price="25">
+              <img src="3.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="C:\Users\AIA\Downloads\ecommerce\produc_ecommerce_reda.html" class="py-2">Infinix
+                  Smart (Galaxy White, 4GB RAM, 64GB Storage) </a>
+                <span id="mashy"> &#36;220 </span> <s>&#36;250</s>
+
+                <div class="cl p-3"> <a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> <span
+                      class="addy">add to
+                      cart</span></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width: 20rem;" data-name="Laptop" data-price="25">
+              <img src="5.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="#" class="py-2">Infinix Smart (Galaxy White, 4GB RAM, 64GB Storage)</a>
+                <span id="mashy"> &#36;220</span> <s>&#36;250</s>
+                <div class="cl p-3"><a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> <span
+                      class="addy">add
+                      to cart</span></a>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width: 20rem;" data-name="Laptop" data-price="25">
+              <img src="2.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="#" class="py-2">Infinix Smart (Galaxy White, 4GB RAM, 64GB Storage)</a>
+                <span id="mashy"> &#36;220</span> <s>&#36;250</s>
+                <div class="cl p-3"><a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> add to cart</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width:20rem;" data-name="Laptop" data-price="25">
+              <img src="7.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="#" class="py-2">Infinix Smart (Galaxy White, 4GB RAM, 64GB Storage)</a>
+                <span id="mashy"> &#36;220</span> <s>&#36;250</s>
+                <div class="cl p-3"><a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> <span
+                      class="addy">add to
+                      cart</span></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width:20rem;" data-name="Laptop" data-price="25">
+              <img src="0.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="#" class="py-2">Infinix Smart (Galaxy White, 4GB RAM, 64GB Storage)</a>
+                <span id="mashy"> &#36;220</span> <s>&#36;250</s>
+                <div class="cl p-3"><a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> <span
+                      class="addy">add to
+                      cart</span></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="card product" style="width:20rem;" data-name="Laptop" data-price="25">
+              <img src="7.png" class="card-img-top  photo" alt="...">
+              <div class="card-body">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+
+
+                </div>
+                <br>
+                <a class="khat" href="#" class="py-2">Infinix Smart (Galaxy White, 4GB RAM, 64GB Storage)</a>
+                <span id="mashy"> &#36;220</span> <s>&#36;250</s>
+                <div class="cl p-3"><a href="#" class="add-to-cart"><i class="bi bi-cart-fill"></i> <span
+                      class="addy">add to
+                      cart</span></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="row banner py-5 text-align-end w-100 justify-content-between">
+          <div class="col-lg-6">
+            <img src="banner_box4.jpg" class="ya33">
+          </div>
+          <div class="col-lg-6 text-end">
+            <img src="banner_box5.jpg" class="ya33">
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+      </div>
+      </div>
+
+
+
+
+    </section>
+    </div>
+  </section>
+  </div>
+  </section>
+  </section>
+
+
+  <section class="footer bg-dark">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3  col-md-6 col-sm-12 py-5">
+          <img src="white_logo.png"><br><br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nam.</p>
+          <div class="muram3">hgf</div>
+          <div class="muram3">hgf</div>
+          <div class="muram3">hgf</div>
+          <div class="muram3">hgf</div>
+
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 py-5 endy">
+          <h2>Find it fast</h2>
+          <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ul>
+        </div>
+        <div class="col-lg-3  col-md-6 col-sm-12 py-5  endy">
+          <h2>Find it fast</h2>
+          <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 py-5  endy">
+          <h2>Find it fast</h2>
+          <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="end">
+    <div class="container ">
+      <div class="row d-flex justify-content-between ">
+        <div class="col-lg-7 col-md-7 col-sm-6 d-flex justify-content-center align-items-center end1"><span id="ff">©
+          </span><span id="fonty">Reda Store.</span> <span id="ff">All Rights
+            Reserved.</span></div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6  d-flex justify-content-center align-items-center"><img
+            src="payment_method.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="cartSidebar">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title"> <i class="bi bi-bag-check ico carty "></i> My Cart </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul id="cart-items" class="list-group"></ul>
+      <hr>
+      <p class="fw-bold mt-3"> Total : $<span id="total-price">0</span></p>
+      <button class="btn88 justify-content-center align-items-center">
+        <p>Check Out</p>
+      </button>
+    </div>
+  </div>
+
+
+
+
+  <script>
+    let x = document.getElementsByClassName("add-to-cart");
+    let number = 0;
+    for (let i = 0; i < x.length; i++) {
+      x[i].addEventListener("click", function () {
+        number++;
+        document.getElementById("badgenumber").textContent = number;
+
+        document.getElementsByClassName("addy").innerHTML = "item in cart";
+        this.style.backgroundColor = "white";
+        this.style.color = "#ff8716";
+      })
+
+    }
+
+    const cartItems = document.getElementById("cart-items");
+    const totalPrice = document.getElementById("total-price");
+    let total = 0;
+
+    // لكل زرار Add to Cart
+    document.querySelectorAll(".add-to-cart").forEach(button => {
+      button.addEventListener("click", () => {
+        const product = button.closest(".product");
+        const name = product.dataset.name;
+        const price = parseFloat(product.dataset.price);
+
+
+        const li = document.createElement("li");
+        li.classList.add("list-group-item", "d-flex", "justify-content-between", "align-items-center");
+        li.textContent = name;
+
+        const span = document.createElement("span");
+        span.textContent = `$${price}`;
+        li.appendChild(span);
+        cartItems.appendChild(li);
+
+
+        total += price;
+        totalPrice.textContent = total.toFixed(2);
+      })
+    });
+
+
+  </script><!-- ✅ Bootstrap JS (bundle فيه Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
